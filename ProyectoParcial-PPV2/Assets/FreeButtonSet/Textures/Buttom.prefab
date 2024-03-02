@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8589126074763213491}
   - component: {fileID: 6012351276355853469}
   - component: {fileID: 7961218726915381982}
+  - component: {fileID: 6381305697528112033}
   m_Layer: 5
   m_Name: Buttom
   m_TagString: Untagged
@@ -121,6 +122,26 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6381305697528112033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292604349191576159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7880bf05a8f0641acc451e28cec8c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lection: 0
+  CurrentLession: 0
+  TotalLession: 0
+  AreaAllLessonComplete: 0
+  StageTitle: {fileID: 0}
+  LessonStage: {fileID: 0}
+  lessonContainer: {fileID: 0}
+  LessonData: {fileID: 0}
 --- !u!1 &2780278711214609146
 GameObject:
   m_ObjectHideFlags: 0
