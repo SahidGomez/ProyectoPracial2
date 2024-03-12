@@ -17,40 +17,40 @@ MonoBehaviour:
   - ID: 0
     lessons: "\xBFQue es una variable?"
     Opciones:
-    - un scrip
-    - Vector
-    - una raiz
-    - un cuadrante
+    - id
+    - tipo
+    - lista
+    - Contenedor
     correctanswer: 0
   - ID: 0
     lessons: "\xBFQue es una funcion?"
     Opciones:
-    - 'id '
-    - simbolo
-    - 'tipo '
+    - scrip
+    - proceso
+    - clase
     - contenedor
     correctanswer: 0
   - ID: 0
-    lessons: "\xBFQue es un programa?"
+    lessons: "\xBFQue es un algoritmo?"
     Opciones:
     - variable
     - proceso
-    - tacos
-    - una cumbia
+    - una lista
+    - funcion
     correctanswer: 0
   - ID: 0
-    lessons: 'Diferencia entre '
+    lessons: que es un programa?
     Opciones:
-    - script
-    - una clase
-    - 'una torta '
-    - rana
+    - funcion
+    - recurso
+    - clase
+    - conjunto de algoritmos
     correctanswer: 0
   - ID: 0
-    lessons: 
+    lessons: diferencia entre programa y aplicacion
     Opciones:
     - un progama
-    - una tv
+    - funcion
     - youtube
-    - clase
+    - el algoritmo
     correctanswer: 0
