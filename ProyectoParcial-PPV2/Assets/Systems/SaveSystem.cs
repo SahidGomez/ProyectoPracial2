@@ -14,8 +14,10 @@ public class SaveSystem : MonoBehaviour
 
     private void Awake()
     {
+    //Comprueba si hay una instancia de SaveSystem en el codigo
         if (instance != null)
         {
+            //Si ya existe una instancia, sale del método Awake
             return;
         }
         else
@@ -30,15 +32,21 @@ public class SaveSystem : MonoBehaviour
 
     private void Start()
     {
+        //Guarda datos desde un archivo JSON
+        //Guarda los datos de la variable data
         SaveToJSON("LeccionDummy", data);
+        //Carga los datos del archivo JSON "SubjectDummy" en la variable Subject
         Subject = LoadFromJSON<SubjectContainer>("SubjectDummy");
     }
 
+    //Función para guardar datos en un archivo JSON
     public void SaveToJSON(string _fileName, object _data)
     {
         if (_data != null)
         {
+            //Convierte los datos a JSON
             string JSONData = JsonUtility.ToJson(_data);
+            //Comprueba si la cadena JSON no está vacía
             if (JSONData.Length != 0)
             {
                 Debug.Log("JSON STRING: " + JSONData);
@@ -60,14 +68,18 @@ public class SaveSystem : MonoBehaviour
 
     public T LoadFromJSON<T>(string _fileNmae) where T : new()
     {
+        //Crea una nueva instancia de tipo T
         T Dato = new T();
         string path = Application.dataPath + "/RESOURCES/JSONS" + _fileNmae + "json";
         string JSONData = "";
+        //Comprueba si el archivo JSON existe
         if (File.Exists(path))
         {
+            //Lee el contenido del archivo JSON
             JSONData = File.ReadAllText(path);
             Debug.Log("JSON String:" + JSONData);
         }
+        //Comprueba si la cadena JSON está vacía o no
         if (JSONData.Length != 0)
         {
             JsonUtility.FromJsonOverwrite(JSONData, Dato);
@@ -77,6 +89,7 @@ public class SaveSystem : MonoBehaviour
             Debug.LogWarning("ERROR: data is null, is empty, check for param [object data]");
 
         }
+        //Devuelve los datos cargados desde el archivo JSON
         return Dato;
     }
 }

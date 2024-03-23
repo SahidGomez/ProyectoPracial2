@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 97808006}
   - component: {fileID: 97808005}
   - component: {fileID: 97808009}
+  - component: {fileID: 97808010}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -416,6 +417,26 @@ MonoBehaviour:
     lessons: 
     Opciones: []
     correctanswer: 0
+--- !u!114 &97808010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97808004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23d31c0d2e3d4b408ba1991fa77720c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    ID: 0
+    lessons: 
+    Opciones: []
+    correctanswer: 0
+  Subject:
+    LeccionID: 0
+    LeccionList: []
 --- !u!1 &207502285
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +705,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226110129}
   m_CullTransparentMesh: 1
+--- !u!1 &308009431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 308009432}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &308009432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308009431}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 315.59613, y: 306.17334, z: 1646.0757}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &338572725
 GameObject:
   m_ObjectHideFlags: 0
@@ -4370,3 +4422,4 @@ SceneRoots:
   - {fileID: 97808008}
   - {fileID: 1252984751}
   - {fileID: 338572726}
+  - {fileID: 308009432}
