@@ -36,8 +36,10 @@ public class SaveSystem : MonoBehaviour
         //Guarda los datos de la variable data
         SaveToJSON("LeccionDummy", data);
         //Carga los datos del archivo JSON "SubjectDummy" en la variable Subject
-        Subject = LoadFromJSON<SubjectContainer>("SubjectDummy");
+        Subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SubjectDummy"));
     }
+
+   
 
     //Función para guardar datos en un archivo JSON
     public void SaveToJSON(string _fileName, object _data)
