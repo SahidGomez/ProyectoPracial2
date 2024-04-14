@@ -22,8 +22,12 @@ public class SaveSystem : MonoBehaviour
         }
         else
         {
+            //Si no existe una instancia, asigna la instancia a instance.
             instance = this;
         }
+        //La cadena JSON se almacena en "SelectedLesson"
+        Subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SelectedLesson"));
+
     }
 
     //<summary>
@@ -34,9 +38,9 @@ public class SaveSystem : MonoBehaviour
     {
         //Guarda datos desde un archivo JSON
         //Guarda los datos de la variable data
-        SaveToJSON("LeccionDummy", data);
+        //SaveToJSON("LeccionDummy", data);
         //Carga los datos del archivo JSON "SubjectDummy" en la variable Subject
-        Subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SubjectDummy"));
+        
     }
 
    
@@ -52,9 +56,13 @@ public class SaveSystem : MonoBehaviour
             if (JSONData.Length != 0)
             {
                 Debug.Log("JSON STRING: " + JSONData);
+                //verifica el nombre del archivo con la extensión .json.
                 string fileName = _fileName + ".json";
+                //Combina la carpeta Resources con el nombre del archivo.
                 string filePath = Path.Combine(Application.dataPath + "/RESOURCES/JSONS", fileName);
+                //Escribe el JSON en el archivo 
                 File.WriteAllText(filePath, JSONData);
+                //Muestra un mensaje en consola indicando la ubicación del archivo
                 Debug.Log("JSON almacenado en la direccion: " + filePath);
             }
             else
@@ -64,6 +72,7 @@ public class SaveSystem : MonoBehaviour
         }
         else
         {
+            //Muestra una advertencia si JSONData es nulo o está vacío.
             Debug.LogWarning("ERROR: data is null, check for param [object data]");
         }
     }
@@ -72,7 +81,7 @@ public class SaveSystem : MonoBehaviour
     {
         //Crea una nueva instancia de tipo T
         T Dato = new T();
-        string path = Application.dataPath + "/RESOURCES/JSONS" + _fileNmae + "json";
+        string path = Application.dataPath + "/RESOURCES/JSONS/" + _fileNmae + ".json";
         string JSONData = "";
         //Comprueba si el archivo JSON existe
         if (File.Exists(path))

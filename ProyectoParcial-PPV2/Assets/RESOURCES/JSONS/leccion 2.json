@@ -1,0 +1,65 @@
+{
+  "LeccionID": 2,
+  "LeccionList": [
+    {
+      "ID": 1,
+      "lessons": "¿Cuál de las siguientes plataformas NO es compatible con Unity?",
+      "Opciones": [
+        "Windows",
+        "Linux",
+        "iOS",
+        "Android",
+        "PlayStation"
+      ],
+      "correctanswer": 1
+    },
+    {
+      "ID": 2,
+      "lessons": "¿Qué es un prefab en Unity?",
+      "Opciones": [
+        "Una librería de assets",
+        "Una herramienta de debugging",
+        "Una escena principal",
+        "Una instancia de GameObject",
+        "Un archivo de configuración"
+      ],
+      "correctanswer": 3
+    },
+    {
+      "ID": 3,
+      "lessons": "¿Qué es el componente Transform en Unity?",
+      "Opciones": [
+        "Un sistema de partículas",
+        "Un controlador de animaciones",
+        "Una interfaz de usuario",
+        "Un componente de físicas",
+        "Una herramienta de debugging"
+      ],
+      "correctanswer": 3
+    },
+    {
+      "ID": 4,
+      "lessons": "¿Qué función cumple el componente AudioSource en Unity?",
+      "Opciones": [
+        "Controlar el movimiento físico",
+        "Reproducir sonidos",
+        "Detectar colisiones",
+        "Crear animaciones",
+        "Controlar la iluminación"
+      ],
+      "correctanswer": 1
+    },
+    {
+      "ID": 5,
+      "lessons": "¿Qué es el motor de física predeterminado en Unity?",
+      "Opciones": [
+        "PhysX",
+        "Bullet Physics",
+        "Box2D",
+        "Havok",
+        "ODE"
+      ],
+      "correctanswer": 0
+    }
+  ]
+}

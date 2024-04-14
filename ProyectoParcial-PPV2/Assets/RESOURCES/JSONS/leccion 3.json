@@ -1,0 +1,65 @@
+{
+  "LeccionID": 2,
+  "LeccionList": [
+    {
+      "ID": 1,
+      "lessons": "¿Qué es un material en Unity?",
+      "Opciones": [
+        "Un componente de interfaz de usuario",
+        "Una instancia de GameObject",
+        "Un componente de físicas",
+        "Una configuración de renderizado",
+        "Una herramienta de debugging"
+      ],
+      "correctanswer": 3
+    },
+    {
+      "ID": 2,
+      "lessons": "¿Cuál de las siguientes NO es una función de la clase Time en Unity?",
+      "Opciones": [
+        "Time.deltaTime",
+        "Time.timeScale",
+        "Time.fixedDeltaTime",
+        "Time.smoothDeltaTime",
+        "Time.timeScaleFactor"
+      ],
+      "correctanswer": 4
+    },
+    {
+      "ID": 3,
+      "lessons": "¿Qué es el componente Animator en Unity?",
+      "Opciones": [
+        "Un sistema de partículas",
+        "Un controlador de animaciones",
+        "Una herramienta de debugging",
+        "Un componente de interfaz de usuario",
+        "Una instancia de GameObject"
+      ],
+      "correctanswer": 1
+    },
+    {
+      "ID": 4,
+      "lessons": "¿Cuál es el nombre del editor de Unity utilizado para desarrollar escenas y prefabs?",
+      "Opciones": [
+        "Unity Editor",
+        "Visual Studio",
+        "MonoDevelop",
+        "Unity Scene Builder",
+        "Unity Hub"
+      ],
+      "correctanswer": 0
+    },
+    {
+      "ID": 5,
+      "lessons": "¿Qué es una corutina en Unity?",
+      "Opciones": [
+        "Un tipo de componente de físicas",
+        "Una instancia de GameObject",
+        "Un tipo de función que permite pausar y reanudar su ejecución",
+        "Una herramienta de debugging",
+        "Un tipo de luz en la escena"
+      ],
+      "correctanswer": 2
+    }
+  ]
+}

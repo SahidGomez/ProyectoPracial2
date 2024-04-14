@@ -21,11 +21,11 @@ public class LessonContainer : MonoBehaviour
 
     [Header("External GameObject Configuration")]
     public GameObject lessonContainer;
+    public string LessonName;
 
 
     [Header("Lesson Data")]
     public ScriptableObject LessonData;
-   public string LessonName;
 
 
     public void Start()

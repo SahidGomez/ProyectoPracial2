@@ -8,10 +8,9 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
     [Header("LevelData")]
+    public SubjectContainer subject;
    
-    public Subject1 Lesson;
-    public Subject1 lesson;
-
+   
     [Header("Usar Interfaces")]
     public TMP_Text QuestionTxt;
     public TMP_Text RespuestaCorrecta;
@@ -50,9 +49,15 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       QuestionAmount = lesson.LeccionList.Count;
-        
+        //Accede a SaveSystem y asigna su propiedad Subject a subject.
+        subject = SaveSystem.instance.Subject;
+
+        //Establece el número de preguntas al contar el número en la lista LeccionList del objeto subject
+        QuestionAmount = subject.LeccionList.Count;
+
+        //Llama a LoadQuestion() para cargar la primera pregunta para iniciar el proceso de carga de preguntas.
         LoadQuestion();
+        //Llama a CheckPlayerState() para realizar la comprobación con el del jugador en el juego.
         CheckPlayerState();
     }
 
@@ -62,7 +67,7 @@ public class LevelManager : MonoBehaviour
         if (CurrentQuestion < QuestionAmount) 
         {
             //establecemos la cantidad de preguntas en la leccion
-            CurrentLesson= lesson.LeccionList[CurrentQuestion];
+            CurrentLesson= subject.LeccionList[CurrentQuestion];
             
             //establecemos la leccion actual en la interfaz
             Question = CurrentLesson.lessons;

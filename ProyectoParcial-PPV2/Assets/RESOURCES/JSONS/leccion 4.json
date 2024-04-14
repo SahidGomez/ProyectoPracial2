@@ -1,0 +1,65 @@
+{
+  "LeccionID": 2,
+  "LeccionList": [
+    {
+      "ID": 1,
+      "lessons": "¿Qué es un shader en Unity?",
+      "Opciones": [
+        "Un tipo de luz en la escena",
+        "Un componente de físicas",
+        "Un efecto visual aplicado a materiales",
+        "Una instancia de GameObject",
+        "Una herramienta de debugging"
+      ],
+      "correctanswer": 2
+    },
+    {
+      "ID": 2,
+      "lessons": "¿Cuál de las siguientes NO es una función de la clase Rigidbody en Unity?",
+      "Opciones": [
+        "AddForce",
+        "AddTorque",
+        "MovePosition",
+        "Rotate",
+        "AddGravity"
+      ],
+      "correctanswer": 4
+    },
+    {
+      "ID": 3,
+      "lessons": "¿Qué es el componente Canvas en Unity?",
+      "Opciones": [
+        "Un componente de interfaz de usuario",
+        "Un controlador de animaciones",
+        "Una herramienta de debugging",
+        "Un componente de físicas",
+        "Un sistema de partículas"
+      ],
+      "correctanswer": 0
+    },
+    {
+      "ID": 4,
+      "lessons": "¿Cuál es el nombre del sistema de colisiones utilizado por defecto en Unity?",
+      "Opciones": [
+        "PhysX",
+        "Bullet Physics",
+        "Box2D",
+        "Havok",
+        "Unity Collision System"
+      ],
+      "correctanswer": 0
+    },
+    {
+      "ID": 5,
+      "lessons": "¿Qué función cumple el componente AudioSource en Unity?",
+      "Opciones": [
+        "Controlar el movimiento físico",
+        "Reproducir sonidos",
+        "Detectar colisiones",
+        "Crear animaciones",
+        "Controlar la iluminación"
+      ],
+      "correctanswer": 1
+    }
+  ]
+}
