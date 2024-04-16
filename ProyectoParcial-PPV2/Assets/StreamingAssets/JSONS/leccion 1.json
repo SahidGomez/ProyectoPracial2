@@ -17,11 +17,11 @@
       "ID": 2,
       "lessons": "¿Qué función cumple el componente Collider en Unity?",
       "Opciones": [
-        "Controlar la gravedad de un objeto",
+        "Controlar la gravedad del objeto",
         "Detectar colisiones",
         "Reproducir sonidos",
         "Crear animaciones",
-        "Controlar el movimiento físico de un objeto"
+        "Controlar el movimiento del objeto"
       ],
       "correctanswer": 1
     },

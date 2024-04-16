@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -27,6 +28,10 @@ public class LevelManager : MonoBehaviour
     public string Question;
     public string CorrectAnswer;
     public int CorrectAnswerFromUser = 9;
+    public GameObject CambioScene;
+    public GameObject Fallo;
+    public GameObject ChangeText;
+    public int vidas = 4;
    
     [Header("Current Lesson")]
     public Leccion1 CurrentLesson;
@@ -59,6 +64,7 @@ public class LevelManager : MonoBehaviour
         LoadQuestion();
         //Llama a CheckPlayerState() para realizar la comprobación con el del jugador en el juego.
         CheckPlayerState();
+       
     }
 
     private void LoadQuestion()
@@ -90,6 +96,14 @@ public class LevelManager : MonoBehaviour
         {
             // si nada de lo anterior se cumple se muestra el texto "llegamos al final de las preguntas" 
             Debug.Log("Fin de las preguntas");
+            
+            QuestionTxt.text = "bien, se acabo";
+            if(vidas> 0)
+            {
+
+                StartCoroutine(buena(true));
+            }
+           
         }
     }
 
@@ -185,6 +199,27 @@ public class LevelManager : MonoBehaviour
         CheckPlayerState();
     }
 
+    private IEnumerator buena(bool iScorrect)
+    {
+        // Activa el gameobject CambioScene
+        CambioScene.SetActive(true);
+        //Para por 6 segundos para que se mantengan en la interfaz
+        yield return new WaitForSeconds(6.0f);
+        //despues de pasar el tiempo se desactiva el CambioScene
+        CambioScene.SetActive(false);
+        // y tambien se cambia a la escena inicial del menu de la lecciones
+        SceneManager.LoadScene("SampleScene");
+
+
+    }
+    private IEnumerator Fail(bool Fail)
+    {
+        Fallo.SetActive(true);
+        yield return new WaitForSeconds(5.0f);
+
+        Fallo.SetActive(false);
+        SceneManager.LoadScene("SampleScene");
+    }
 
 
 }

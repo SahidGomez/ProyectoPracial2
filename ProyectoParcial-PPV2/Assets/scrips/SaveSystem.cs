@@ -59,7 +59,7 @@ public class SaveSystem : MonoBehaviour
                 //verifica el nombre del archivo con la extensión .json.
                 string fileName = _fileName + ".json";
                 //Combina la carpeta Resources con el nombre del archivo.
-                string filePath = Path.Combine(Application.dataPath + "/RESOURCES/JSONS", fileName);
+                string filePath = Path.Combine(Application.dataPath + "/StreamingAssets/JSONS", fileName);
                 //Escribe el JSON en el archivo 
                 File.WriteAllText(filePath, JSONData);
                 //Muestra un mensaje en consola indicando la ubicación del archivo
@@ -81,7 +81,7 @@ public class SaveSystem : MonoBehaviour
     {
         //Crea una nueva instancia de tipo T
         T Dato = new T();
-        string path = Application.dataPath + "/RESOURCES/JSONS/" + _fileNmae + ".json";
+        string path = Application.dataPath + "/StreamingAssets/JSONS/" + _fileNmae + ".json";
         string JSONData = "";
         //Comprueba si el archivo JSON existe
         if (File.Exists(path))

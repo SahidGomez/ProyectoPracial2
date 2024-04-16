@@ -15,7 +15,8 @@ using UnityEngine;
         [Header("GameObject Configuration")]
         public int LeccionID = 0;
 
-        [Header("Lesson Quest Configuration")]
+    //define una lista de objetos de Leccion1 para configurar la lección
+    [Header("Lesson Quest Configuration")]
         public List<Leccion1> LeccionList;
 
 

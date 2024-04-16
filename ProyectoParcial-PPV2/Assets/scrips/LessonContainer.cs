@@ -6,19 +6,19 @@ using TMPro;
 
 public class LessonContainer : MonoBehaviour
 {
-
+    //variables relacionadas con la configuración del GameObject.
     [Header("GameObject Configuration")]
     public int Lection = 0;
     public int CurrentLession = 0;
     public int TotalLession = 0;
     public bool AreaAllLessonComplete = false;
 
-
+    //Esta sección contiene referencias a elementos de la interfaz de usuario.
     [Header("UI Configuration")]
     public TMP_Text StageTitle;
     public TMP_Text LessonStage;
 
-
+    //variables y configuracion del Gamgeobject
     [Header("External GameObject Configuration")]
     public GameObject lessonContainer;
     public string LessonName;

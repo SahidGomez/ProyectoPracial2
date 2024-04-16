@@ -55,7 +55,7 @@
       "Opciones": [
         "Un tipo de componente de físicas",
         "Una instancia de GameObject",
-        "Un tipo de función que permite pausar y reanudar su ejecución",
+        "Función que permite pausar y reanudar su ejecución",
         "Una herramienta de debugging",
         "Un tipo de luz en la escena"
       ],
