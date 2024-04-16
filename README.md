@@ -10,7 +10,7 @@ Parcial3
 El tercer ejecutable se encuentra en la carpeta EjecutableParcial3
 Video y capturas de como es el juego se encuentran en EjecutableParcial3 / Capturas
 
-SCRIPS
+SCRIPTS
 ---
 LessonContainer: Supervisa la leccion que esta en la interfaz
 LevelManager: Agarra los datos de scriptableobject para hacer las preguntas y asi como comprobar si esta bien o mal
