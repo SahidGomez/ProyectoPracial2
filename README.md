@@ -30,5 +30,12 @@ Cuando inicies el juego aparecera las diferentes lecciones las cuales puedes ele
 Al seleccionar una este te mandara a la leccion junto con sus preguntas y tendras que responderlas
 Si estas mal, se mostrara en la interfaz un recuadro rojo y la leyenda de "Respuesta Incorrecta" y a su vez la respuesta correcta
 Si la tienes correcta solo se mostrara un recuadro verde y la leyenda "Respuesta Correcta" y continuara a la siguiente pregunta
+![Captura de pantalla 2024-04-15 173838](https://github.com/SahidGomez/ProyectoPracial2/assets/156129783/76c59c2f-8d2d-4e1d-9bc0-cdbd62adec7c)
+![Captura de pantalla 2024-04-15 173930](https://github.com/SahidGomez/ProyectoPracial2/assets/156129783/1ac2dda1-cc3a-4b32-9473-98faf05b6bbe)
+![Captura de pantalla 2024-04-15 174026](https://github.com/SahidGomez/ProyectoPracial2/assets/156129783/7cdbad87-4404-4872-a2ed-05aaf648234e)
+![Captura de pantalla 2024-04-15 174305](https://github.com/SahidGomez/ProyectoPracial2/assets/156129783/3c90e0f0-55db-440d-bf46-eff421f468b6)
+![Captura de pantalla 2024-04-15 174348](https://github.com/SahidGomez/ProyectoPracial2/assets/156129783/69033dae-4dd3-4713-ac65-d8bf7a0a9eb7)
+![Captura de pantalla 2024-04-15 174439](https://github.com/SahidGomez/ProyectoPracial2/assets/156129783/f377ada5-553b-4742-8fbd-f9f936739e0e)
+
 
 Para poder Instalar el ejecutable desde GitHub puedes clonar el repositorio o darle click donde dice "Code" y darle en DownloadZip
