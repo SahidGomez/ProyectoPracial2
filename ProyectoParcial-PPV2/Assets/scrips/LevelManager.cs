@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
     [Header("LevelData")]
+    public SubjectContainer subject;
    
-    public Subject1 Lesson;
-    public Subject1 lesson;
-
+   
     [Header("Usar Interfaces")]
     public TMP_Text QuestionTxt;
     public TMP_Text RespuestaCorrecta;
@@ -28,6 +28,10 @@ public class LevelManager : MonoBehaviour
     public string Question;
     public string CorrectAnswer;
     public int CorrectAnswerFromUser = 9;
+    public GameObject CambioScene;
+    public GameObject Fallo;
+    public GameObject ChangeText;
+    public int vidas = 4;
    
     [Header("Current Lesson")]
     public Leccion1 CurrentLesson;
@@ -50,10 +54,17 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       QuestionAmount = lesson.LeccionList.Count;
-        
+        //Accede a SaveSystem y asigna su propiedad Subject a subject.
+        subject = SaveSystem.instance.Subject;
+
+        //Establece el número de preguntas al contar el número en la lista LeccionList del objeto subject
+        QuestionAmount = subject.LeccionList.Count;
+
+        //Llama a LoadQuestion() para cargar la primera pregunta para iniciar el proceso de carga de preguntas.
         LoadQuestion();
+        //Llama a CheckPlayerState() para realizar la comprobación con el del jugador en el juego.
         CheckPlayerState();
+       
     }
 
     private void LoadQuestion()
@@ -62,7 +73,7 @@ public class LevelManager : MonoBehaviour
         if (CurrentQuestion < QuestionAmount) 
         {
             //establecemos la cantidad de preguntas en la leccion
-            CurrentLesson= lesson.LeccionList[CurrentQuestion];
+            CurrentLesson= subject.LeccionList[CurrentQuestion];
             
             //establecemos la leccion actual en la interfaz
             Question = CurrentLesson.lessons;
@@ -85,6 +96,14 @@ public class LevelManager : MonoBehaviour
         {
             // si nada de lo anterior se cumple se muestra el texto "llegamos al final de las preguntas" 
             Debug.Log("Fin de las preguntas");
+            
+            QuestionTxt.text = "bien, se acabo";
+            if(vidas> 0)
+            {
+
+                StartCoroutine(buena(true));
+            }
+           
         }
     }
 
@@ -180,6 +199,27 @@ public class LevelManager : MonoBehaviour
         CheckPlayerState();
     }
 
+    private IEnumerator buena(bool iScorrect)
+    {
+        // Activa el gameobject CambioScene
+        CambioScene.SetActive(true);
+        //Para por 6 segundos para que se mantengan en la interfaz
+        yield return new WaitForSeconds(6.0f);
+        //despues de pasar el tiempo se desactiva el CambioScene
+        CambioScene.SetActive(false);
+        // y tambien se cambia a la escena inicial del menu de la lecciones
+        SceneManager.LoadScene("SampleScene");
+
+
+    }
+    private IEnumerator Fail(bool Fail)
+    {
+        Fallo.SetActive(true);
+        yield return new WaitForSeconds(5.0f);
+
+        Fallo.SetActive(false);
+        SceneManager.LoadScene("SampleScene");
+    }
 
 
 }

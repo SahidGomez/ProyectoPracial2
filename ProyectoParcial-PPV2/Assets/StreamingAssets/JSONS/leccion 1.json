@@ -1,0 +1,65 @@
+{
+  "LeccionID": 2,
+  "LeccionList": [
+    {
+      "ID": 1,
+      "lessons": "¿Cuál de los siguientes lenguajes de programación NO es compatible con Unity?",
+      "Opciones": [
+        "C#",
+        "Java",
+        "Python",
+        "JavaScript",
+        "C++"
+      ],
+      "correctanswer": 2
+    },
+    {
+      "ID": 2,
+      "lessons": "¿Qué función cumple el componente Collider en Unity?",
+      "Opciones": [
+        "Controlar la gravedad del objeto",
+        "Detectar colisiones",
+        "Reproducir sonidos",
+        "Crear animaciones",
+        "Controlar el movimiento del objeto"
+      ],
+      "correctanswer": 1
+    },
+    {
+      "ID": 3,
+      "lessons": "¿Qué es el componente Rigidbody2D en Unity?",
+      "Opciones": [
+        "Un sistema de partículas",
+        "Un controlador de animaciones",
+        "Un componente de físicas 2D",
+        "Una herramienta de debugging",
+        "Una interfaz de usuario"
+      ],
+      "correctanswer": 2
+    },
+    {
+      "ID": 4,
+      "lessons": "¿Cuál de los siguientes NO es un tipo de luz en Unity?",
+      "Opciones": [
+        "Directional Light",
+        "Point Light",
+        "Spotlight",
+        "Line Light",
+        "Area Light"
+      ],
+      "correctanswer": 3
+    },
+    {
+      "ID": 5,
+      "lessons": "¿Qué es el motor de renderizado predeterminado en Unity?",
+      "Opciones": [
+        "OpenGL",
+        "DirectX",
+        "Metal",
+        "Vulkan",
+        "Unity Graphics"
+      ],
+      "correctanswer": 4
+    }
+  ]
+}
