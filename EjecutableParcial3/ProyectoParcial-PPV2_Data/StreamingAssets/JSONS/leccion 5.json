@@ -1,0 +1,65 @@
+{
+  "LeccionID": 2,
+  "LeccionList": [
+    {
+      "ID": 1,
+      "lessons": "¿Qué es un GameObject en Unity?",
+      "Opciones": [
+        "Una instancia de un objeto en la escena",
+        "Un archivo de proyecto",
+        "Una librería de scripts",
+        "Una herramienta de debugging",
+        "Una configuración de renderizado"
+      ],
+      "correctanswer": 0
+    },
+    {
+      "ID": 2,
+      "lessons": "¿De las siguientes NO es una función de la clase Transform en Unity?",
+      "Opciones": [
+        "Translate",
+        "Rotate",
+        "Scale",
+        "LookAt",
+        "ApplyForce"
+      ],
+      "correctanswer": 4
+    },
+    {
+      "ID": 3,
+      "lessons": "¿Qué es el componente Rigidbody en Unity?",
+      "Opciones": [
+        "Un componente de interfaz de usuario",
+        "Un sistema de partículas",
+        "Una herramienta de debugging",
+        "Un componente de físicas",
+        "Una instancia de GameObject"
+      ],
+      "correctanswer": 3
+    },
+    {
+      "ID": 4,
+      "lessons": "¿Nombre del editor de Unity utilizado para desarrollar scripts y códigos?",
+      "Opciones": [
+        "Unity Editor",
+        "Visual Studio",
+        "MonoDevelop",
+        "Unity Code Builder",
+        "Unity Hub"
+      ],
+      "correctanswer": 1
+    },
+    {
+      "ID": 5,
+      "lessons": "¿Qué función cumple el componente AudioSource en Unity?",
+      "Opciones": [
+        "Controlar el movimiento físico",
+        "Reproducir sonidos",
+        "Detectar colisiones",
+        "Crear animaciones",
+        "Controlar la iluminación"
+      ],
+      "correctanswer": 1
+    }
+  ]
+}
